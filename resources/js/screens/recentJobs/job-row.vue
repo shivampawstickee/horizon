@@ -26,6 +26,10 @@
             {{ readableTimestamp(job.payload.pushedAt) }}
         </td>
 
+        <td class="table-fit">
+            {{ readableTimestamp(job.reserved_at) }}
+        </td>
+
         <td v-if="$route.params.type=='completed'" class="table-fit">
             {{ readableTimestamp(job.completed_at) }}
         </td>
