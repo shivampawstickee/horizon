@@ -162,8 +162,8 @@
                 <thead>
                 <tr>
                     <th>Job</th>
-                    <th v-if="$route.params.type=='pending'" class="text-right">Queued At</th>
-                    <th v-if="$route.params.type=='completed'">Queued At</th>
+                    <th>Queued At</th>
+                    <th>Reserved At</th>
                     <th v-if="$route.params.type=='completed'">Completed At</th>
                     <th v-if="$route.params.type=='completed'" class="text-right">Runtime</th>
                 </tr>

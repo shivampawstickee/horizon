@@ -34,6 +34,11 @@
                     <div class="col">{{ readableTimestamp(job.payload.pushedAt) }}</div>
                 </div>
 
+                <div class="row mb-2">
+                    <div class="col-md-2"><strong>Reserved At</strong></div>
+                    <div class="col">{{ readableTimestamp(job.reserved_at) }}</div>
+                </div>
+
                 <div class="row mb-2" v-if="prettyPrintJob(job.payload.data).batchId">
                     <div class="col-md-2"><strong>Batch</strong></div>
                     <div class="col">
