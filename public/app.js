@@ -83849,7 +83849,11 @@ var render = function() {
     _c("td", { staticClass: "table-fit" }, [
       _vm._v(
         "\n        " +
-          _vm._s(_vm.readableTimestamp(_vm.job.reserved_at)) +
+          _vm._s(
+            _vm.job.reserved_at
+              ? _vm.readableTimestamp(_vm.job.reserved_at)
+              : "-"
+          ) +
           "\n    "
       )
     ]),
@@ -83998,7 +84002,13 @@ var render = function() {
                 _vm._m(3),
                 _vm._v(" "),
                 _c("div", { staticClass: "col" }, [
-                  _vm._v(_vm._s(_vm.readableTimestamp(_vm.job.reserved_at)))
+                  _vm._v(
+                    _vm._s(
+                      _vm.job.reserved_at
+                        ? _vm.readableTimestamp(_vm.job.reserved_at)
+                        : "-"
+                    )
+                  )
                 ])
               ]),
               _vm._v(" "),

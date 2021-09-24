@@ -27,7 +27,7 @@
         </td>
 
         <td class="table-fit">
-            {{ readableTimestamp(job.reserved_at) }}
+            {{ job.reserved_at ? readableTimestamp(job.reserved_at) : '-' }}
         </td>
 
         <td v-if="$route.params.type=='completed'" class="table-fit">

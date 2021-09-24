@@ -36,7 +36,7 @@
 
                 <div class="row mb-2">
                     <div class="col-md-2"><strong>Reserved At</strong></div>
-                    <div class="col">{{ readableTimestamp(job.reserved_at) }}</div>
+                    <div class="col">{{ job.reserved_at ? readableTimestamp(job.reserved_at) : '-' }}</div>
                 </div>
 
                 <div class="row mb-2" v-if="prettyPrintJob(job.payload.data).batchId">
